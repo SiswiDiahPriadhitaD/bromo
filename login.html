@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>JIWA JAWA BROMO HOTEL</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class = "siswi">
+            <form action="menuUtama.html" method="get" id="myForm" onsubmit=" return validasi()">
+                <p align="center">LOGIN</p>
+                Username  <input type="text" name="username" ><br>
+                Password  <input type="password" name="password" ><br>
+                <input class="login" type="submit" name="submit" value="login">
+              </form>
+              <script type="text/javascript">
+                function validasi(){
+                  var username = document.forms["myForm"]["username"].value;
+                  var password = document.forms["myForm"]["password"].value;
+                  if(username =="" || password ==""){
+                    alert("Harus Terisi");
+                    return false;
+                  }
+                  else {
+                        if(password.length <= 5){
+                            alert("password harus sedikitnya 5 karakter");
+                            return false;
+                        }
+                  }
+                }
+              </script>
+        </div>
+    </body>
+</html>

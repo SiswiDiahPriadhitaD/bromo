@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>CEK HARGA HOTEL</title>
+	  <link rel="stylesheet" href="styleCekharga.css">
+</head>
+<body>
+ <div class = "siswi">
+            <form method="get" id="myForm" onsubmit=" return validasi()">
+               <h1>CEK HARGA </h1>
+               <div class = "selected" >
+              	LANTAI		:<input type="text" name="lantai" ><br><br>
+              	TYPE		:<select name="type">
+							  <option value="Standar">Standar</option>
+							  <option value="superiorroom">Superior Room</option>
+							  <option value="deluxeroom">Deluxe Room</option>
+							 </select><br><br>
+            	JUMLAH HARI	:<input type="text" name="jumlahhari" ><br><br>
+            	DISKON		:<select name="diskon">
+				                <option value="">Tidak Ada</option>
+				                <option value="1">Member</option>
+				                <option value="2">Promo HUT</option>
+				            </select><br><br>
+
+<input class="check" type="button" name="submit" value="check" align="center"><br><br>
+        </div></form>
+<a href="menuUtama.html" >Kembali ke Halaman Utama</a>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HOME</title>
+	<link rel="stylesheet" href="StyleHome.css">
+	<script src="jquery-3.6.0.js"></script>
+	<script>
+		var i=0;
+		$(document).ready(function(){
+			$('.slidertitle, #slider img').hide();
+			showNextImage();
+			setInterval('showNextImage()', 3000);
+		});
+
+		function showNextImage(){
+			i++;
+			$('#sliderImage'+i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+			$('#title'+i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+			if(i==3){
+				i=0;
+			}
+		};
+	</script>
+</head>
+<body>
+<h1 class="judul" align="center">JIWA JAWA HOTEL BROMO</h1>
+		<div id="slider" align="center">
+		<img id="sliderImage1" src="hotel1.jpg" height="300" width="600">
+		<div class="slidertitle" id="title1"></div>
+
+		<img id="sliderImage2" src="hotel2.jpg" height="300" width="600">
+		<div class="slidertitle" id="title2"></div>
+
+		<img id="sliderImage3" src="hotel3.jpg" height="300" width="600">
+		<div class="slidertitle" id="title3"></div>
+ <header>
+		
+	</div>
+		<h3 class="deskripsi" >Hotel kelas atas yang menawan ini dikelilingi oleh pegunungan, serta berjarak 5 km dari Pura Luhur Poten Bromo dan 13 km dari Air Terjun Umbulan.
+		Kamar yang didekorasi dengan nuansa hangat memiliki TV layar datar, serta alat pembuat teh dan kopi; beberapa di antaranya memiliki balkon dengan pemandangan gunung. Kamar suite dilengkapi dengan bar mini, ruang keluarga/makan dan/atau perapian. Penginapan grup berkapasitas hingga 9 tamu, serta memiliki pantri dan tempat tidur tingkat. Tidak ada AC. Room service tersedia.
+
+		Parkir dan sarapan gratis. Restoran kelas atas menyajikan masakan internasional. Fasilitas lainnya meliputi landasan helikopter, amfiteater, dan galeri seni dengan kafe. Penyewaan sepeda juga tersedia.</h3>
+	</header>
+	<a href="menuUtama.html" >Kembali ke Halaman Utama</a>
+</body>
+</html>
